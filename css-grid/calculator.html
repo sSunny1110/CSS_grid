@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:teal;
+            text-align: center;
+            font-size:60px;
+        }
+        #container{
+            width:30%;
+            height:550px;
+            margin: auto;
+            margin-top:50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius:15px;
+            border:1px solid white;
+        }
+        #display{
+            width:85%;
+            height:60px;
+            margin: auto;
+            margin-top:40px;
+            border-radius:15px;
+            border:1px solid black;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #display:hover{
+            background-color:rgb(241, 237, 231);
+        }
+        #keyboard{
+            width: 85%;
+            height:auto;
+            margin: auto;
+            margin-top:20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,80px);
+            gap:15px;
+           
+        }
+     
+        #keyboard>div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius:15px;     
+            font: bold;
+            font-size:30px;
+        }
+
+        #keyboard>div:hover{
+            font-size:40px;
+        }
+        #org{
+            background-color:orangered;
+            color:white;
+        }
+        #blk{
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="container"> 
+        <div id="display"></div>
+        <div id="keyboard">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div id="blk">+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div id="blk">-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div id="blk">*</div>
+            <div id="org">C</div>
+            <div>0</div>
+            <div id="blk">=</div>
+            <div id="blk">/</div>
+        </div>
+    </div>
+</body>
+</html>
